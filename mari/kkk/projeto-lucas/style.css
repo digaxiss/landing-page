@@ -1,0 +1,300 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    /* Espaça entre logo, menu e ícones */
+    align-items: center;
+    /* Alinha verticalmente */
+    padding: 20px 40px;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+    color: black;
+    font-family: 'montserrat', sans-serif;
+}
+
+.logo img {
+    margin-top: 2px;
+}
+
+.logo h1 {
+    font-size: 34px;
+}
+
+nav {
+    display: flex;
+    gap: 45px;
+
+}
+
+nav a {
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+.user-acount button {
+    background-color: white;
+    border: none;
+    margin-right: 30px;
+}
+
+.mensagem-inicio {
+    background-color: #FFF3E3;
+    width: 600px;
+    height: 470px;
+    position: absolute;
+    top: 28%;
+    margin-left: 57%;
+    border-radius: 10px;
+    font-family: 'poppins', sans-serif;
+    padding-left: 40px;
+}
+
+.mensagem-inicio .arrival {
+    color: #333;
+    font-size: 24x;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.mensagem-inicio h3 {
+    align-items: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: #B88E2F;
+}
+
+.mensagem-inicio p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 30px;
+}
+
+.mensagem-inicio button {
+    background-color: #B88E2F;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+/* SEÇÃO LUGARES DA CASA */
+
+.mensagem {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'poppins', sans-serif;
+    color: black;
+}
+
+.mensagem h2 {
+    margin: 0 42%;
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+    white-space: nowrap;
+    word-spacing: normal;
+}
+
+.mensagem p {
+    margin: 0 37.7%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap;
+}
+
+.cards-mensagem {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-mensagem img {
+    margin-top: 80px;
+    border-radius: 8px;
+}
+
+.cards-mensagem p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* seção produtos */
+.products {
+    margin-top: 30px;
+}
+
+.products h2 {
+    margin: 0 43%;
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 30px;
+    white-space: nowrap;
+    word-spacing: normal;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 32px;
+}
+
+.products {
+    padding: 32px 0;
+    text-align: center;
+
+}
+
+.cards-prod {
+    display: flex;
+    flex-wrap: wrap;
+    /* ele permite que o conteúdo quebre quando não couber na tela */
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1240px;
+    /* definindo que cards-prod tem uma largura máxima de 1240px */
+}
+
+.card-prod {
+    position: relative;
+    margin-bottom: 32px;
+    width: 285px;
+}
+
+.card-prod img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.infos {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f4f5f7;
+    width: 100%;
+    height: auto;
+    min-height: 120px;
+    padding: 16px;
+}
+
+.infos p:first-child {
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #3a3a3a;
+}
+
+.infos p:nth-child(2) {
+    font-family: 'poppis', sans-serif;
+    font-size: 16px;
+    color: #898989;
+    margin-bottom: 12px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price p:first-child {
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3a3a3a;
+    margin-bottom: 0 !important;
+}
+
+.price p:nth-child(2) {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-left: 10px;
+    margin-bottom: 0 !important;
+}
+
+.new,
+.desc {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.new {
+    background: #2ec1ac;
+}
+
+.desc {
+    background-color: #e97171;
+}
+
+.products button {
+    border: #B88E2F solid;
+    background-color: transparent;
+    color: #B88E2F;
+    padding: 12px 74px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 32px;
+    font-weight: 600;
+}
+
+.section-beautiful {
+    background-color: #FCF8F3;
+    width: 100%;
+    height: 600px;
+    padding: 100px; 
+    box-sizing: border-box;
+}
+
+.bg-inner img {
+    margin-left: 40%;
+    margin-top: -10%;
+}
+
+.rooms {
+    background-color: red;
+}
+
+.rooms h2{
+    font-size: 40px;
+}
