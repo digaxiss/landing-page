@@ -282,7 +282,7 @@ nav a {
     background-color: #FCF8F3;
     width: 100%;
     height: 600px;
-    padding: 100px; 
+    padding: 100px;
     box-sizing: border-box;
 }
 
@@ -295,6 +295,6 @@ nav a {
     background-color: red;
 }
 
-.rooms h2{
+.rooms h2 {
     font-size: 40px;
 }
