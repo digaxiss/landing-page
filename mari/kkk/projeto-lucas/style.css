@@ -55,16 +55,22 @@ nav a {
     margin-right: 30px;
 }
 
+.section-home {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .mensagem-inicio {
     background-color: #FFF3E3;
     width: 600px;
     height: 470px;
     position: absolute;
-    top: 28%;
-    margin-left: 57%;
+    top: 30%;
     border-radius: 10px;
     font-family: 'poppins', sans-serif;
     padding-left: 40px;
+    margin-right: 20px;
 }
 
 .mensagem-inicio .arrival {
@@ -139,6 +145,8 @@ nav a {
 .cards-mensagem img {
     margin-top: 80px;
     border-radius: 8px;
+    width: 285px;
+    height: 446px;
 }
 
 .cards-mensagem p {
@@ -151,150 +159,200 @@ nav a {
 }
 
 /* seção produtos */
-.products {
-    margin-top: 30px;
-}
-
-.products h2 {
-    margin: 0 43%;
-    margin-top: 30px;
-    font-size: 35px;
-    font-weight: 700;
-    margin-top: 30px;
-    white-space: nowrap;
-    word-spacing: normal;
-    font-family: 'poppins', sans-serif;
-    margin-bottom: 32px;
-}
-
-.products {
-    padding: 32px 0;
-    text-align: center;
-
-}
-
-.cards-prod {
+.content-about {
+    font-family: 'Poppins', sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    /* ele permite que o conteúdo quebre quando não couber na tela */
-    justify-content: center;
-    gap: 30px;
-    margin: 0 auto;
-    max-width: 1240px;
-    /* definindo que cards-prod tem uma largura máxima de 1240px */
-}
-
-.card-prod {
-    position: relative;
-    margin-bottom: 32px;
-    width: 285px;
-}
-
-.card-prod img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.infos {
-    display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: #f4f5f7;
-    width: 100%;
-    height: auto;
-    min-height: 120px;
-    padding: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.infos p:first-child {
-    font-family: 'poppins', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 8px;
-    color: #3a3a3a;
-}
-
-.infos p:nth-child(2) {
-    font-family: 'poppis', sans-serif;
-    font-size: 16px;
-    color: #898989;
-    margin-bottom: 12px;
-}
-
-.price {
+.content-about h2 {
     display: flex;
-    align-items: center;
-}
-
-.price p:first-child {
-    font-family: 'poppins', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
     color: #3a3a3a;
-    margin-bottom: 0 !important;
+    margin-bottom: 32px;
 }
 
-.price p:nth-child(2) {
-    font-family: 'poppins', sans-serif;
-    font-size: 16px;
-    color: #b0b0b0;
-    margin-left: 10px;
-    margin-bottom: 0 !important;
+.content-about .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
-.new,
-.desc {
+/* Card */
+.content-about .cards .card {
+    position: relative;
+    width: 285px;
+    height: 446px;
+    box-sizing: border-box;
+    background-color: #f4f5f7;
+    overflow: hidden;
+}
+
+/* Selo de desconto */
+.content-about .cards .card .desconto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 8px 12px;
-    border-radius: 3px;
-    color: white;
-    font-family: 'poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-.new {
-    background: #2ec1ac;
-}
-
-.desc {
+    left: 210px;
+    top: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
     background-color: #e97171;
 }
 
-.products button {
-    border: #B88E2F solid;
-    background-color: transparent;
-    color: #B88E2F;
-    padding: 12px 74px;
-    font-family: 'poppins', sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 32px;
+.content-about .cards .card .desconto p {
+    color: white;
+}
+
+/* Selo novo */
+.content-about .cards .card .novo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 210px;
+    top: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #2ec1ac;
+}
+
+.content-about .cards .card .novo p {
+    color: white;
+}
+
+.content-about .cards .card img {
+    width: 285px;
+    height: 301px;
+}
+
+.content-about .cards .card h3 {
+    font-size: 24px;
     font-weight: 600;
+    margin: 8px 0 0 16px;
 }
 
-.section-beautiful {
-    background-color: #FCF8F3;
+.content-about .cards .card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 16px;
+}
+
+.content-about .cards .card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #898989;
+    margin: 8px 16px;
+}
+
+.content-about .cards .card .value-rp {
+    display: flex;
+}
+
+.content-about .cards .card .value-rp p {
+    text-decoration: line-through;
+    margin: 0;
+    color: #b0b0b0;
+    font-weight: 300;
+}
+
+/* Overlay */
+.content-about .cards .card .cardhover {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 600px;
-    padding: 100px;
-    box-sizing: border-box;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.8);
+    display: none;
+    color: white;
+    transition: all 0.5s ease-in-out;
 }
 
-.bg-inner img {
-    margin-left: 40%;
-    margin-top: -10%;
+.content-about .cards .card .cardhover .interaction-cardhover {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 }
 
-.rooms {
-    background-color: red;
+.content-about .cards .card .cardhover .interaction-cardhover p {
+    margin: 0;
+    color: white;
 }
 
-.rooms h2 {
-    font-size: 40px;
+.content-about .cards .card .cardhover .interaction-cardhover .interaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.content-about .cards .card .cardhover .content-cardhover {
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.content-about .cards .card .cardhover .content-cardhover button {
+    width: 202px;
+    height: 48px;
+    color: #b88e2f;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-about .cards .card .cardhover .content-cardhover button:hover {
+    color: white;
+    background-color: #b88e2f;
+    transition: 500ms;
+}
+
+.content-about .cards .card .cardhover img {
+    width: 16px;
+    height: 16px;
+}
+
+.content-about .cards .card:hover .cardhover {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botão */
+.button-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 69px;
+    width: 245px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #b88e2f;
+    color: #b88e2f;
+    font-size: 16px;
+}
+
+.button-about:hover {
+    color: white;
+    background-color: #b88e2f;
+    transition: 500ms;
 }
