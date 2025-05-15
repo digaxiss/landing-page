@@ -1,0 +1,397 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    /* Espaça entre logo, menu e ícones */
+    align-items: center;
+    /* Alinha verticalmente */
+    padding: 20px 40px;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+    color: black;
+    font-family: 'montserrat', sans-serif;
+}
+
+.logo img {
+    margin-top: 2px;
+}
+
+.logo h1 {
+    font-size: 34px;
+}
+
+nav {
+    display: flex;
+    gap: 45px;
+
+}
+
+nav a {
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+.user-acount button {
+    background-color: white;
+    border: none;
+    margin-right: 30px;
+}
+
+.section-home {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mensagem-inicio {
+    background-color: #FFF3E3;
+    width: 600px;
+    height: 470px;
+    position: absolute;
+    top: 30%;
+    border-radius: 10px;
+    font-family: 'poppins', sans-serif;
+    padding-left: 40px;
+    margin-right: 20px;
+}
+
+.mensagem-inicio .arrival {
+    color: #333;
+    font-size: 24x;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.mensagem-inicio h3 {
+    align-items: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: #B88E2F;
+}
+
+.mensagem-inicio p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 30px;
+}
+
+.mensagem-inicio button {
+    background-color: #B88E2F;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+/* SEÇÃO LUGARES DA CASA */
+
+.mensagem {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'poppins', sans-serif;
+    color: black;
+}
+
+.mensagem h2 {
+    margin: 0 42%;
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+    white-space: nowrap;
+    word-spacing: normal;
+}
+
+.mensagem p {
+    margin: 0 37.7%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap;
+}
+
+.cards-mensagem {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-mensagem img {
+    margin-top: 80px;
+    border-radius: 8px;
+    width: 285px;
+    height: 446px;
+}
+
+.cards-mensagem p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* seção produtos */
+.content-about {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-about h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #3a3a3a;
+    margin-bottom: 32px;
+}
+
+.content-about .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+/* Card */
+.content-about .cards .card {
+    position: relative;
+    width: 285px;
+    height: 446px;
+    box-sizing: border-box;
+    background-color: #f4f5f7;
+    overflow: hidden;
+}
+
+/* Selo de desconto */
+.content-about .cards .card .desconto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 210px;
+    top: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #e97171;
+}
+
+.content-about .cards .card .desconto p {
+    color: white;
+}
+
+/* Selo novo */
+.content-about .cards .card .novo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 210px;
+    top: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #2ec1ac;
+}
+
+.content-about .cards .card .novo p {
+    color: white;
+}
+
+.content-about .cards .card img {
+    width: 285px;
+    height: 301px;
+}
+
+.content-about .cards .card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 8px 0 0 16px;
+}
+
+.content-about .cards .card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 16px;
+}
+
+.content-about .cards .card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #898989;
+    margin: 8px 16px;
+}
+
+.content-about .cards .card .value-rp {
+    display: flex;
+}
+
+.content-about .cards .card .value-rp p {
+    text-decoration: line-through;
+    margin: 0;
+    color: #b0b0b0;
+    font-weight: 300;
+}
+
+/* Overlay */
+.content-about .cards .card .cardhover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.8);
+    display: none;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.content-about .cards .card .cardhover .interaction-cardhover {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-about .cards .card .cardhover .interaction-cardhover p {
+    margin: 0;
+    color: white;
+}
+
+.content-about .cards .card .cardhover .interaction-cardhover .interaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.content-about .cards .card .cardhover .content-cardhover {
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.content-about .cards .card .cardhover .content-cardhover button {
+    width: 202px;
+    height: 48px;
+    color: #b88e2f;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-about .cards .card .cardhover .content-cardhover button:hover {
+    color: white;
+    background-color: #b88e2f;
+    transition: 500ms;
+}
+
+.content-about .cards .card .cardhover img {
+    width: 16px;
+    height: 16px;
+}
+
+.content-about .cards .card:hover .cardhover {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botão */
+.button-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 69px;
+    width: 245px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #b88e2f;
+    color: #b88e2f;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.button-about:hover {
+    color: white;
+    background-color: #b88e2f;
+    transition: 500ms;
+}
+
+/* seção beautiful */
+
+.beautiful {
+    background-color: #FCF8F3;
+    width: 100%;
+    height: 670px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+
+.texts-beautiful {
+    padding: 100px;
+
+}
+
+.texts-beautiful h3 {
+    font-size: 42px;
+}
+
+.texts-beautiful p {
+    color: #616161;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.texts-beautiful button {
+    width: 146px;
+    height: 48px;
+    background-color: #B88E2F;
+    border: none;
+    color: white;
+    margin-top: 25px;
+}
